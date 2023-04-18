@@ -414,7 +414,7 @@ body {
 
 .certificate {
   position: relative;
-  margin: 100px 0 0px 0;
+  margin: 100px 0 100px 0;
 }
 .certificate__bg-absolute-1 {
   position: absolute;
@@ -444,7 +444,7 @@ body {
   text-align: center;
 }
 .certificate__right {
-  width: 800px;
+  /* width: 800px; */
   position: relative;
 }
 .certificate__absolute-img1 {
@@ -503,26 +503,32 @@ top: 35%;
 }
 
 /* styled SLIDES GROUP  */
-.group__swiper{}
+
+.group__swiper{
+  width: 100%;
+}
 .group__slide{
   text-align: center;
   width: 523px;
   height: 515px;
 }
 .group__img{
-  width: 70%;
+  width: 100%;
+  height: 88%;
 }
 .group__pillz-img{
-  width: 60%;
+  width: 120%;
+
 }
 .group__femio-img{
-  width: 55%;
+  width: 100%;
 }
 .group__mixterra-img{
-  width: 45%;
+  width: 100%;
 }
 .group__naturoteka-img{
-  width: 30%;
+  width: 77%;
+  
 }
 .group__title{  
   font-family: 'Neue Machina';
@@ -1353,6 +1359,13 @@ padding: 10px 10px;
     width: 50%;
     text-align: center;
   }
+  .group__img{
+    width: 80%;
+    height: 88%;
+  }
+  .group__naturoteka-img{
+    width: 45%;
+  }
 }
 @media (max-width: 878px) {
   
@@ -1642,6 +1655,7 @@ padding: 10px 10px;
     width: 200px;
     margin-top: 10px;
   }
+  
 }
 @media (max-width: 520px) {
   .container {
@@ -1788,18 +1802,7 @@ padding: 10px 10px;
   margin-left: 20px;
   margin-top: 15px;
 }
-/* .brand-slide {
-  width: 90%;
-  margin: 0 10px;
-} */
-/* .brand .brand__contentbox-card {
-  width: 320px;
-  margin: 0px 0px;
-}
-.brand__img {
-  width: 30%;
-  left: -45px;
-} */
+
 .certificate__title {
   max-width: 360px;
 }
@@ -1872,13 +1875,21 @@ padding: 10px 10px;
   }
   .slides__count{
     top: 84%;
-    right: 24%;
+    right: 0%;
     width: 70px;
     height: 70px;
   }
   .slides_prev{
-    left: 24%;
+    left: 0%;
   }
+  .group__img{
+    width: 100%;
+    height: 80%;
+  }
+  .group__naturoteka-img{
+    width: 65%;
+  }
+  
 }
 @media (max-width: 420px) {
   
@@ -1918,14 +1929,12 @@ padding: 10px 10px;
     transition: all 0.1s linear;
   }
   .slides__count{
-    top: 87%;
-    right: 26%;
+    top: 89%;
+    right: 0%;
     width: 60px;
     height: 60px;
   }
-  .slides_prev{
-    left: 26%;
-  }
+  
   .about__right-img{
     width: 360px;
   }
@@ -1961,6 +1970,10 @@ padding: 10px 10px;
     width: 60%;
     top: 40px;
     left: -15px;
+  }
+  .group__pillz-img{
+    width: 100%;
+    height: 74%;
   }
 }
 
