@@ -1,0 +1,1983 @@
+@font-face{
+	font-family: NeueMachina;
+	font-display: swap;
+	src: url("../fonts/NeueMachina-Regular.woff2") format("woff2");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face{
+	font-family: NeueMachina;
+	font-display: swap;
+	src: url("../fonts/NeueMachina-Ultrabold.woff2") format("woff2");
+	font-weight: 800;
+	font-style: normal;
+}
+
+html, body{
+  scroll-behavior: smooth;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid rgba(255, 0, 0, 0.254); */
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: #F1F5FE;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 165%;
+}
+
+.container {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.overtitle {
+  font-family: "NeueMachina";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 114%;
+  color: #98B5FF;
+  
+}
+
+.title {
+  font-family: "NeueMachina";
+  font-weight: 800;
+  font-size: 38px;
+  line-height: 114%;
+  color: #4F587A;
+}
+
+.description {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+  color: #979797;
+}
+
+.menu__burger div {
+  width: 60px;
+  height: 6px;
+  margin-top: 5px;
+  background: #4F587A;
+  border-radius: 5px;
+}
+
+.active {
+  min-height: 400px;
+  overflow: visible;
+  transition: all 0.1s linear;
+  padding: 10px 30px;
+  z-index: 2;
+}
+
+.close {
+  text-align: right;
+  color: white;
+  font-size: 24px;
+}
+
+.header {
+  position: relative;
+}
+.header__bg-absolute-1 {
+  position: absolute;
+  top: 15vh;
+  right: 0;
+  width: 60%;
+}
+.header__bg-absolute-2 {
+  position: absolute;
+  top: 40vh;
+  left: -36vw;
+  width: 60%;
+}
+.header__top {
+ 
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  align-items: start;
+}
+
+.header__nav-list {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  width: 516px;
+  /* height: 80px; */
+}
+.header__nav-item {
+  position: relative;
+  display: flex;
+  
+}
+.header__nav-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #979797;
+  padding-top: 80px;
+}
+.header__nav-link:hover {
+  color: #4F587A;
+  display: flex;
+  /* height: 80px; */
+}
+.header__nav-link:hover::before {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: #98B5FF;
+  position: absolute;
+  top: 0;
+}
+.header__logo{
+  margin-top: 60px;
+}
+.header__top-btn {
+  margin-top: 60px;
+  color: white;
+  background: #000;
+  padding: 20px 44px;
+  border-radius: 15px 0px 15px 15px;
+  display: inline-block;
+}
+.header__menu-mobile,
+.header__btn-mobile
+ {
+  display: none;
+}
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+.header__wrapper-left {
+  position: relative;
+}
+.header__overtitle {
+  display: flex;
+  align-items: center;
+}
+.header__overtitle-line {
+  width: 200px;
+  height: 1px;
+  background: #4F587A;
+  margin-right: 22px;
+}
+.header__overtitle-text {
+  font-family: "NeueMachina";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 114%;
+  color: #4F587A;
+}
+.header__title {
+  max-width: 620px;
+  margin-top: 50px;
+}
+.header__title-span {
+  color: #98B5FF;
+}
+.header__description {
+  margin-top: 22px;
+  max-width: 580px;
+}
+.header__arrow {
+  position: absolute;
+  width: 15%;
+  top: 22%;
+  right: -40px;
+}
+.header__wrapper-infobox {
+  /* width: 325px;
+  padding: 24px 15px; */
+  width: 274px;
+  padding: 5px;
+  background: #FFFFFF;
+  border-radius: 50px 0px 60px 50px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+}
+.header__wrapper-right {
+  position: relative;
+  height: 100%;
+  padding-top: 100px;
+}
+
+
+.infobox__title {
+  font-family: "NeueMachina";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 114%;
+  text-transform: uppercase;
+  color: #4F587A;
+}
+
+.infobox__descr {
+  font-family: "NeueMachina";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 114%;
+  color: #979797;
+}
+
+.infobox__img {
+  margin-right: 17px;
+  width: 50px;
+  height: 50px;
+}
+
+.infobox__earth {
+  top: 12%;
+  right: -8%;
+}
+
+.infobox__crown {
+  bottom: -6%;
+  left: -10%;
+}
+
+.brand {
+  margin-top: 100px;
+}
+.brand .wrapper__card {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  counter-reset: section 0;
+}
+.brand__mobile-inner {
+  display: none;
+}
+.brand__contentbox {
+  position: relative;
+}
+.brand__contentbox-card {
+  width: 430px;
+  height: 220px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  background: #4F587A;
+  margin-right: 10px;
+  border-radius: 15px 0px 15px 15px;
+  color: white;
+  counter-increment: section;
+  transform: scale(1);
+  transition: all 0.1s linear;
+}
+.brand__contentbox-card:hover {
+  background: #2B2F3D;
+  box-shadow: 0px 0px 10px #0c0b0b, 0px 0px 20px #4F587A;
+  transform: scale(1.1);
+  transition: all 0.1s linear;
+}
+.brand__contentbox-card:hover ~ .brand__img {
+  transform: scale(1.1);
+  transition: all 0.1s linear;
+}
+.brand__contentbox-card::before {
+  content: "/0" counter(section);
+  position: absolute;
+  top: 30px;
+  right: 37px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.brand__contentbox-card img {
+  position: absolute;
+  z-index: 1;
+}
+.brand__img {
+  position: absolute;
+  top: -60px;
+  left: -30px;
+  z-index: 2;
+  transform: scale(1);
+  transition: all 0.1s linear;
+}
+.brand__contentbox-card:hover ~ .brand__img-back, .brand__contentbox-card:hover ~ .brand__img-front {
+  transform: rotate(0deg);
+}
+.brand__img-back {
+  transform: rotate(16deg);
+}
+.brand__img-front {
+  left: 15px;
+  transform: rotate(-11deg);
+}
+.brand__overtitle {
+  margin-top: 30px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 28px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.brand__name {
+  margin-top: 13px;
+  font-family: "NeueMachina";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 114%;
+  color: white;
+  text-transform: uppercase;
+}
+.brand__descr {
+  margin-top: 13px;
+}
+
+.card__content-text {
+  margin-left: 175px;
+  z-index: 2;
+}
+
+.naturoteka__card {
+  margin-left: 160px;
+}
+.effilab__card{
+  margin-left: 205px;
+}
+
+.timeline {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+}
+.timeline__year {
+  font-family: "NeueMachina";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 114%;
+  color: #98B5FF;
+  margin-right: 28px;
+}
+.timeline__year:not(:first-child) {
+  margin-left: 28px;
+}
+.timeline__line {
+  width: 100%;
+  height: 2px;
+  background: #979797;
+  position: relative;
+}
+.timeline__line::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #979797;
+  position: absolute;
+  left: 0;
+  top: -4px;
+}
+.timeline__line::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #979797;
+  position: absolute;
+  right: 0;
+  top: -4px;
+}
+
+
+
+.certificate {
+  position: relative;
+  margin-top: 100px;
+}
+.certificate__bg-absolute-1 {
+  position: absolute;
+  left: 10vw;
+  width: 50%;
+}
+.certificate__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+.certificate__title {
+  margin-top: 20px;
+  
+}
+.certificate__description {
+  margin-top: 30px;
+
+}
+.certificate__left {
+  max-width: 720px;
+  margin-right: 30px;
+  position: relative;
+  text-align: center;
+}
+.certificate__right {
+  width: 800px;
+  position: relative;
+}
+.certificate__absolute-img1 {
+  position: absolute;
+  top: -90px;
+  right: -120px;
+  transform: rotate(-15deg);
+}
+.certificate__partners {
+  position: relative;
+  margin-top: 100px;
+  text-align: center;
+}
+.certificate__slides-inner{
+  display: none;
+}
+.partners__img-arrow {
+  position: absolute;
+  top: -110px;
+  width: 15%;
+  left: 180px;
+}
+.partners__title {
+  font-family: "NeueMachina";
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 114%;
+  text-align: center;
+  color: #4F587A;
+}
+.partners__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.partners__img {
+  width: 15%;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+}
+
+.slides__count {
+position: absolute;
+top: 35%;
+ cursor: pointer;
+  z-index: 10;
+}
+.slides_next{
+  right: -100px;
+}
+
+
+.slides_prev {
+  transform: rotate(180deg);
+}
+
+/* styled SLIDES GROUP  */
+.group__slide{
+  text-align: center;
+  width: 523px;
+  height: 515px;
+}
+.group__img{
+  width: 70%;
+}
+.group__pillz-img{
+  width: 60%;
+}
+.group__femio-img{
+  width: 55%;
+}
+.group__mixterra-img{
+  width: 45%;
+}
+.group__naturoteka-img{
+  width: 30%;
+}
+.group__title{  
+  font-family: 'Neue Machina';
+  font-weight: 800;
+  font-size: 38px;
+  line-height: 114%;
+  text-transform: uppercase;
+  color: #98B5FF;}
+.group__text{
+  font-family: 'Neue Machina';
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 114%;
+  text-transform: uppercase;
+}
+
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../img/about_bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  /* height: 100vh; */
+}
+.about__wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  /* padding-top: 40px; */
+  padding: 30px 0;
+}
+.about__title {
+  margin-top: 30px;
+  font-size: 38px;
+  line-height: 120%;
+}
+.about__description {
+  /* margin-top: 30px; */
+  margin-top: 20px
+}
+.about__left {
+  max-width: 100%;
+}
+.about__right {
+  position: relative;
+  height: 100%;
+}
+.about__right-img {
+  margin-top: 60px;
+  width: 400px;
+}
+.about__citate-wrapper {
+  display: flex;
+  margin-top: 35px;
+  align-items: start;
+  max-width: 100%;
+}
+.about__citate-img {
+  margin-right: 28px;
+}
+.about__citate-text {
+  font-family: "NeueMachina";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 150%;
+  color: #4F587A;
+}
+/* .about .header__wrapper-infobox{
+  width: 307px;
+padding: 10px 10px;
+} */
+.infobox__heart {
+  /* right: -80px;
+  top: 0px; */
+  right: -51px;
+  top: 24px;
+  
+}
+.infobox__heart .infobox__img,
+.infobox__shield .infobox__img{
+  width: 50px;
+  height: 50px;
+}
+.infobox__heart .infobox__title,
+.infobox__shield .infobox__title{
+ font-size: 18px;
+}
+
+.infobox__shield .infobox__descr{
+  color: white;
+}
+
+.infobox__shield {
+  background: #98B5FF;
+  /* left: -80px;
+  bottom: -20px; */
+  left: -31px;
+  bottom: -24px;
+  width: 274px;
+  padding: 5px;
+}
+
+.cooperation {
+  position: relative;
+  margin-top: 100px;
+  text-align: center;
+}
+.cooperation__bg-absolute-1 {
+  position: absolute;
+  width: 50%;
+}
+.cooperation__bg-absolute-2 {
+  position: absolute;
+  width: 50%;
+  top: -50px;
+  left: -300px;
+}
+.cooperation__wrapper {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.cooperation__overtitle{
+  margin-bottom: 20px;
+}
+.cooperation__title{
+  font-size: 44px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.cooperation__contentbox {
+  padding: 42px 32px 58px 54px;
+  background-color: #4F587A;
+  border-radius: 15px 0px 15px 15px;
+  overflow: hidden;
+  position: relative;
+  color: white;
+  text-align: left;
+  max-width: 700px;
+  min-height: 350px;
+}
+.cooperation__contentbox-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+}
+.cooperation__contentbox-img {
+  position: absolute;
+  top: 0px;
+  right: -20px;
+}
+.cooperation__who {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: #98B5FF;
+}
+.cooperation__manufacture {
+  margin-top: 25px;
+  font-family: "NeueMachina";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 114%;
+}
+.cooperation__numberbox {
+  background: #98B5FF;
+  padding: 12px;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+}
+.cooperation__number {
+  font-family: "NeueMachina";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 114%;
+  text-align: center;
+}
+.cooperation__descr {
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  position: relative;
+  z-index: 10;
+}
+.cooperation__search {
+  margin-top: 40px;
+  background: #98B5FF;
+  border-radius: 100px 0px 60px 100px;
+  padding: 38px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+.cooperation__search-descr {
+  font-family: "NeueMachina";
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 114%;
+  color: #FFFFFF;
+  max-width: 356px;
+}
+.cooperation__search-wrapper {
+  background: white;
+  padding: 16px;
+  border-radius: 100px;
+}
+.cooperation__search-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 165%;
+  color: #4F587A;
+}
+
+.contacts {
+  position: relative;
+  margin-top: 150px;
+}
+.contacts__bg-absolute-1 {
+  position: absolute;
+  width: 35%;
+  top: 30px;
+  left: 150px;
+}
+.contacts__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contacts__title {
+  margin: 30px 0;
+  max-width: 570px;
+}
+.contacts__description {
+  max-width: 425px;
+}
+.contacts__wrapper-left{
+  margin-right: 20px;
+}
+.contacts__wrapper-right {
+  width: 820px;
+  
+}
+.contacts__form {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  position: relative;
+}
+.contacts__input {
+  border: none;
+  background: #FFFFFF;
+  border-radius: 30px 0px 30px 30px;
+  width: 100%;
+  padding: 20px 40px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 28px;
+  text-align: center;
+  color: #4F587A;
+  position: relative;
+}
+
+.contacts__input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  color: #979797;
+}
+.contacts__input[type=text] {
+  grid-column: span 2;
+}
+.contacts__btn {
+  background: #98B5FF;
+  border-radius: 30px 0px 30px 30px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  color: white;
+  border: none;
+  padding: 20px 30px;
+  grid-column: span 2;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+
+}
+
+.footer {
+  margin-top: 150px;
+  background: #4F587A;
+  color: white;
+  position: relative;
+  padding-bottom: 50px;
+}
+.footer::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  top: 128px;
+  background: rgba(255, 255, 255, 0.1294117647);
+}
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__top .header__logo{
+  margin-top: 0;
+}
+.footer__nav-list {
+  display: flex;
+  align-items: center;
+  margin: 0 300px;
+}
+.footer__nav-item {
+  text-align: center;
+  padding: 50px 30px;
+  background: #4F587A;
+  width: 200px;
+  color: #979797;
+  border-left: 1px solid rgba(255, 255, 255, 0.1294117647);
+}
+.footer__nav-item:last-child {
+  border-right: 1px solid rgba(255, 255, 255, 0.1294117647);
+}
+.footer__nav-item:hover {
+  background: rgba(255, 255, 255, 0.1294117647);
+  color: white;
+}
+.footer__bot {
+  margin-top: 65px;
+  display: flex;
+  align-items: start;
+}
+.footer__contacts-title {
+  font-family: "Neue Machina";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 114%;
+  color: #98B5FF;
+  margin-right: 56px;
+}
+.footer__contacts-list {
+  margin-right: 80px;
+}
+.footer__contacts-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+.footer__socials-list {
+  margin-left: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 250px;
+}
+.footer__socials-item {
+  background: rgba(255, 255, 255, 0.1294117647);
+  
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+.footer__socials-item svg {
+  fill: #98B5FF;
+}
+.footer__socials-item:hover {
+  background: #98B5FF;
+}
+.footer__socials-item:hover svg {
+  fill: white;
+}
+.footer__copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  opacity: 0.3;
+}
+.footer__copyright-link {
+  text-decoration: underline;
+  margin-left: 176px;
+}
+
+
+
+.certificate__swiper {
+  width: 600px;
+  height: 400px;
+
+ 
+}
+
+
+.certificate__slide {
+  background-position: center;
+  background-size: cover;
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  margin-top: 100px;
+  gap:1px ;
+}
+
+
+.certificate__slide img {
+  display: block;
+  position: absolute;
+  top:-150px ;
+  left:50%;
+  right: 50%;
+  transform: translate(-50%);
+
+}
+.certificate__slide  .certificate__slide-img2{
+ 
+  margin-left: 10px;
+}
+.certificate__slide-square{
+  max-width: 220px;
+  height: 200px;
+  color: white;
+  background: rgb(79, 88, 122);
+  border-radius: 15px 0px 15px 15px;
+  padding: 5px 10px;
+  position: relative;
+  transform: scale(1);
+  transition: all 0.1s linear;
+
+}
+.certificate__slide-square:hover{
+  background: #2B2F3D;
+  box-shadow: 0px 0px 5px #0c0b0b, 0px 0px 10px #4F587A;
+  transform: scale(1.01);
+  transition: all 0.1s linear;
+  z-index: 15;
+}
+.certificate__text{
+  margin-top: 80px;
+  text-align: center;
+}
+
+.naturoteka__slide img{
+  width: 30%;
+  top: -115px;
+}
+.naturoteka__slide .naturoteka__slide-img{
+  width: 24%;
+  
+}
+.mixterra__slide img{
+  width: 50%;
+  top: -100px;
+}
+.pillz__slide img{
+  width: 90%;
+  top: -80px
+}
+.femio__slide img{
+  width: 65%;
+  top: -120px;
+}
+@media (max-width: 1320px) {
+  .container{
+    max-width: 1200px;
+   padding: 0 10px;
+  }
+  .header__wrapper-infobox {
+    width: 308px;
+    padding: 12px 12px;
+  }
+  .infobox__shield {
+    left: -40px;
+  }
+  .infobox__shield {
+    right: -40px;
+  }
+  .brand__contentbox-card {
+    width: 392px;
+  }
+  .footer__socials-item {
+    margin-left: 10px;
+  }
+}
+@media (max-width: 1240px) {
+  .container{
+    max-width: 1180px;
+  }
+  .header__arrow {
+    display: none;
+  }
+  .brand__contentbox-card {
+    width: 360px;
+    margin-right: 30px;
+  }
+  .brand__img {
+    width: 50%;
+  }
+  .pillz__img {
+    top: 10px;
+  }
+  .thincko__img {
+    top: -20px;
+  }
+  .certificate__wrapper {
+    flex-direction: column;
+  }
+  .certificate__wrapper-slide {
+    flex-direction: row;
+  }
+  .certificate__left{
+    margin-bottom: 60px;
+  }
+  .footer__nav-item {
+    width: 160px;
+  }
+}
+@media (max-width: 1140px) {
+  .container {
+    max-width: 1000px;
+    overflow: hidden;
+  }
+  .header__wrapper {
+    flex-direction: column;
+  }
+  .header__title {
+    max-width: 100%;
+  }
+  .header__description {
+    max-width: 100%;
+  }
+  .header__arrow {
+    top: 33%;
+  }
+  .header__wrapper-right {
+    width: 100%;
+    height: 550px;
+    margin: 30px 0;
+    background-image: url("../img/header_meet.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .header__wrapper-right__img {
+    display: none;
+  }
+  .brand__wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .brand .wrapper__card {
+    flex-direction: column;
+  }
+  .brand__contentbox-card {
+    width: 600px;
+    margin-top: 80px;
+  }
+  .brand__img {
+    width: 33%;
+    top: -40px;
+  }
+  .pillz__img {
+    margin-top: 74px;
+  }
+  .thincko__img {
+    top: 0;
+  }
+  .timeline {
+    flex-direction: column;
+  }
+  .timeline__year {
+    margin: 30px 28px;
+  }
+  .timeline__year:first-child {
+    margin-left: 28px;
+  }
+  .timeline__line {
+    height: 100%;
+    width: 2px;
+    background: #979797;
+    position: relative;
+  }
+  .timeline__line::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #979797;
+    position: absolute;
+    top: 100%;
+    left: -4px;
+  }
+  .timeline__line::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #979797;
+    position: absolute;
+    bottom: 0;
+    right: -4px;
+  }
+  .partners__img-arrow {
+    top: -80px;
+    left: 180px;
+  }
+  .footer__nav-list {
+    margin-left: 200px;
+  }
+}
+@media (max-width: 920px) {
+
+  .container {
+    max-width: 880px;
+  }
+  
+  .header__top {
+    align-items: center;
+    position: relative;
+  }
+  .header__nav {
+    display: none;
+  }
+  .header__menu-mobile {
+    display: block;
+    margin-left: auto;
+    margin-right: 60px;
+    position: relative;
+  }
+  .menu__burger{
+    z-index: 10;
+    position: relative;
+  }
+  .header__nav-mobile {
+    width: 400px;
+    position: absolute;
+    top: 30px;
+    right: 2px;
+    color: #979797;
+    background: #fff;
+    border-radius: 50px 0px 60px 50px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 0.1s linear;
+  }
+  .mobile__nav-list {
+  
+  }
+  .mobile__nav-item {
+    margin-top: 15px;
+    
+    padding: 23px 30px;
+
+  }
+  .mobile__nav-item:active{
+    background: #98B5FF;
+    border-radius: 80px;
+  }
+  .mobile__nav-link {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #979797;
+    padding: 0;
+  }
+  .header__nav-link:hover {
+    color: white;
+    display: inline-block;
+    height: 100%;
+  }
+  .header__nav-link:hover::before {
+    top: 100%;
+  }
+  .header__top-btn {
+    margin-top: 0;
+  }
+  .infobox__earth {
+    top: -4%;
+    right: 0%;
+  }
+  .infobox__crown {
+    bottom: -4%;
+    left: 0%;
+    z-index: 10;
+  }
+  .brand {
+    margin-top: 100px;
+  }
+ 
+  .certificate__wrapper {
+    flex-direction: column;
+  }
+  .certificate__title {
+    max-width: 100%;
+  }
+  .certificate__description {
+    max-width: 100%;
+  }
+  .certificate .certificate__absolute-img1 {
+    display: none;
+  }
+  .certificate__right {
+    margin-top: 30px;
+  }
+  .partners__img-arrow {
+    top: -60px;
+    left: 100px;
+  }
+ 
+  .about {
+    margin-top: 100px;
+    padding-bottom: 30px;
+  }
+  .about__left {
+    max-width: 100%;
+  }
+  .about__wrapper{
+    flex-direction: column;
+  }
+  .about__right {
+    margin: 0 auto;
+  }
+  .cooperation {
+    margin-top: 100px;
+  }
+  .cooperation__wrapper {
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  .cooperation__title{
+    font-size: 42px;
+    margin: 0;
+  }
+  .cooperation__title, .cooperation__overtitle,
+  .cooperation .description {
+    text-align: left;
+  }
+  .cooperation__search {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+  .cooperation__search-descr {
+    grid-column: span 3;
+    max-width: 100%;
+  }
+  .contacts {
+    margin-top: 100px;
+  }
+  .contacts__wrapper {
+    flex-direction: column;
+  }
+  .contacts__description {
+    max-width: 100%;
+  }
+  .contacts__form {
+    margin-top: 30px;
+  }
+  .footer {
+    margin-top: 100px;
+  }
+  .footer__nav-list {
+    margin-left: 120px;
+  }
+  .footer__nav-item {
+    width: 162px;
+    padding: 50px 0px;
+  }
+  .footer__bot {
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 20px;
+  }
+  .footer__socials-list {
+    margin: 0 auto;
+  }
+  
+  .slides_next{
+    right: 0px;
+  }
+  .header__top-btn{
+    display: none;
+  }
+  .header__btn-mobile{
+    display: inline-block;
+    margin: 40px 0;
+    color: white;
+    background: #000;
+    padding: 20px 44px;
+    border-radius: 15px 0px 15px 15px;
+    width: 50%;
+    text-align: center;
+  }
+}
+@media (max-width: 878px) {
+  
+  .footer {
+    margin-top: 100px;
+  }
+  .footer__nav-list {
+    margin-left: 30px;
+  }
+  .footer__nav-item {
+    width: 152px;
+    padding: 50px 0px;
+  }
+  .footer__bot {
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 20px;
+  }
+  .footer__socials-list {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 740px;
+  }
+  .header__logo{
+    margin-top: 30px;
+  }
+  .cooperation__search {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .brand__wrapper {
+    display: none;
+  }
+
+  .brand__mobile-inner{
+    display: block;
+    counter-increment: section;
+  }
+  
+  .brand__contentbox-card:hover {
+    background: #2B2F3D;
+    box-shadow: none;
+    transform: scale(1);
+    transition: all 0.1s linear;
+  }
+  .brand__contentbox-card:hover ~ .brand__img {
+    transform: scale(1);
+    transition: all 0.1s linear;
+  }
+  /* .brand__contentbox-card::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    right: 37px;
+    color: rgba(255, 255, 255, 0.5);
+  } */
+  .card__content-text{
+    margin-left: 0;
+    padding-top: 40px;
+    text-align: left;
+  }
+  .brand__img{
+    width: 45%;
+    top: 80px;
+    left: 0px;
+  }
+ 
+ 
+  .brand__contentbox{
+    width: 100%;
+   padding: 10px 0;
+    
+  }
+  .brand__contentbox-card{
+    width: 100%;
+    margin-top: 20px;
+    height: 250px;
+    margin-right: 10px;
+  }
+  .brand__descr{
+    margin-top: 30ox;
+  }
+  .card__content-text{
+    margin-left: 170px;
+    margin-top: 0;
+    max-width: 250px;
+  }
+  .timeline__year {
+    text-align: right;
+    margin: 30px 0 10px 0;
+  }
+
+
+
+  .brand__naturoteka-img{
+   
+    top: 60px;
+    left: -8px;
+  }
+  .brand__pillz-img{
+    width: 65%;
+    top: 60px;
+    left: -30px;
+  }
+  .brand__name{
+    font-size: 24px;
+  }
+  .brand__effilab-img{ 
+    width: 58%;
+    top: 88px;
+    left: -24px;
+  }
+  .brand__femio-img{ 
+    width: 80%;
+    top: -40px;
+    left: -53px;
+  }
+  .brand__mixtera-img{ 
+    width: 66%;
+    top: 0px;
+    left: -56px;
+  }
+  .brand__thincko-img{ 
+    width: 58%;
+    top: 40px;
+    left: -18px;
+  }
+  .brand__wrapper-count {
+    position: absolute;
+    top: 30px;
+    right: 37px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .certificate__slides-inner{
+    display: block;
+  }
+  .certificate__left{
+    max-width: 100%;
+    margin-bottom: 0px;
+  }
+  .certificate__swiper{
+    width: 580px;
+    margin-left: 0;
+    height: 320px;
+    
+  }
+  .certificate__wrapper-slide{
+    padding-top: 20px;
+  }
+  .certificate__slide-square{
+    max-width: 180px;
+  }
+  .certificate__slide img {
+    top:-100px ;
+  }
+  .certificate__text{
+    margin-top: 70px;
+    font-size: 17px;
+    line-height: 120%;
+  }
+
+  .femio__slide img{
+    margin-top: -25px;
+  }
+  .pillz__slide img{
+    top: -84px;
+  }
+  .naturoteka__slide img{
+    margin-top: -8px;
+  }
+  .partners__wrapper{
+    flex-direction: column;
+  }
+
+  .partners__img{
+    width: 70%;
+    aspect-ratio: 16/5;
+    object-fit: scale-down;
+  
+  }
+  .contacts__wrapper-right {
+    max-width: 100%;
+  }
+  .footer::after {
+    top: 108px;
+  }
+  .footer__top {
+    margin-top: 30px;
+  }
+  .footer__nav-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 0;
+  }
+  .footer__nav-item {
+    border: none;
+    padding: 0px;
+  }
+  .footer__nav-item:last-child {
+    border-right: none;
+  }
+  .header__btn-mobile{
+    width: 100%;
+  }
+}
+@media (max-width: 700px) {
+  .cooperation__search-wrapper {
+    width: 100%;
+    grid-column: span 3;
+  }
+  .contacts__input {
+    grid-column: span 2;
+  }
+  .group__pillz-img{
+    width: 64%;
+  }
+  .group__femio-img{
+    width: 57%;
+  }
+  .group__mixterra-img{
+    width: 45%;
+  }
+  .group__naturoteka-img{
+    width: 30%;
+  }
+}
+@media (max-width: 590px) {
+  
+  .container {
+    max-width: 570px;
+  }
+  .header__wrapper {
+    margin-top: 60px;
+  }
+
+  .brand__swiper-mobile {
+    width: 480px;
+    height: 450px;
+   padding-left: 15px;
+   margin: 5px;
+  }
+  .certificate {
+    margin-top: 100px;
+  }
+  .mixterra__slide img{
+    top: -98px;
+  }
+  .femio__slide img{
+    margin-top: -16px;
+  }
+  .about {
+    margin-top: 80px;
+  }
+  .about__wrapper {
+    padding-top: 40px;
+  }
+  .footer__copyright {
+    text-align: center;
+    flex-direction: column;
+  }
+  .footer__copyright-link {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  .about__citate-wrapper{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .about__citate-text{
+    margin-top: 22px;
+  }
+  .infobox__heart{
+    right: 10px;
+  }
+  .infobox__shield{
+    left: 10px;
+  }
+  .header__overtitle{
+    flex-direction: column-reverse;
+  }
+  .header__overtitle-line{
+    width: 200px;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 520px) {
+  .container {
+    max-width: 500px;
+  }
+  .title{
+    font-size: 32px;
+  }
+  .description{
+    font-size: 15px;
+    line-height: 140%;
+  }
+  
+  .header__menu-mobile {
+    margin-right: 10px;
+  }
+  .header__top-btn {
+    padding: 15px 20px;
+  }
+  .header__wrapper,
+  .header__title{
+    margin-top: 40px;
+  }
+  .header__description{
+    margin-top: 15px;
+  }
+  .header__overtitle-line{
+    width: 100px;
+  }
+  .header__overtitle-line{
+    font-size: 16px;
+  }
+  .brand{
+    margin-top: 80px;
+  }
+  .partners__title{
+    margin-top: 150px;
+  }
+  .partners__img-arrow {
+    width: 50%;
+    top: -150px;
+    left: 80px;
+  }
+  .certificate{
+    margin-top: 80px;
+  }
+  .certificate__title{
+    margin-top: 15px;
+  }
+  .certificate__description{
+    min-width: 100%;
+    margin-top: 15px;
+  }
+  .certificate__swiper{
+    width: 480px;
+    height: 300px;
+  }
+  .certificate__text{
+    margin-top: 40px;
+  }
+  .certificate__slide img{
+    margin-top: -37px;
+  }
+  .mixterra__slide img{
+    top: -60px;
+  }
+  .pillz__slide img{
+    top:-48px;
+  }
+  .femio__slide img{
+    top: -78px;
+  }
+  .naturoteka__slide img{
+    top: -68px;
+  }
+  .about__description{
+    margin-top: 15px;
+  }
+  .about__citate-img{
+    width: 50px;
+    height: 50px;
+  }
+  .about__citate-text{
+    font-size: 20px;
+    line-height: 130%;
+  }
+  .certificate__slide-square{
+    max-width: 150px;
+    height: 150px;
+  }
+  .cooperation{
+    margin-top: 80px;
+  }
+  .contacts__input{
+    padding: 20px;
+  }
+  .footer__nav-list{
+    grid-template-columns: repeat(1,1fr);
+    gap: 0;
+    margin-top: 30px;
+  }
+  .footer:after {
+    
+    width: 0;
+  }
+  .footer__top {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .footer__nav{
+    width: 100%;
+  }
+  
+  .footer__nav-item{
+    width: 100%;
+    display: inline-block;
+    line-height: 80px;
+    border-top: 1px solid #ffffff10;
+  }
+  .footer__nav-item:last-child{
+    border-bottom: 1px solid #ffffff10;
+  }
+  .footer__nav-item:active{
+    background: #ffffff10;
+  }
+ 
+}
+@media (max-width: 470px) {
+
+ .header__top{
+  flex-wrap: wrap;
+  margin-left: -20px;
+ }
+ .header__nav-list {
+  width: 100%;
+  flex-direction: column;
+}
+.header__top-btn {
+  padding: 15px 15px;
+  width: 98%;
+  text-align: center;
+  margin-left: 20px;
+  margin-top: 15px;
+}
+/* .brand-slide {
+  width: 90%;
+  margin: 0 10px;
+} */
+/* .brand .brand__contentbox-card {
+  width: 320px;
+  margin: 0px 0px;
+}
+.brand__img {
+  width: 30%;
+  left: -45px;
+} */
+.certificate__title {
+  max-width: 360px;
+}
+.certificate__description {
+  max-width: 360px;
+}
+.certificate__bg-absolute-1 {
+  display: none;
+}
+
+.arrow_next {
+  width: 30%;
+  margin-left: 5px;
+}
+.certificate__wrapper-slide {
+  height: 73%;
+}
+
+.certificate__swiper{
+  height: 564px;
+}
+.certificate__slide {
+  grid-template-columns: repeat(1,1fr);
+  margin-top: 0px;
+}
+.certificate__slide img {
+  top:0px ;
+  left: 54px;
+}
+.certificate__text{
+  margin-top: 30px;
+  margin-left: auto;
+  text-align: center;
+  max-width: 60%;
+}
+.certificate__slide-square{
+  max-width: 85%;
+  height: 150px;
+  margin-top: 10px;
+  margin-left: 0px;
+}
+.naturoteka__slide img{
+  width: 13%;
+ top: 25px;
+}
+.naturoteka__slide .naturoteka__slide-img{
+  width: 10%;
+}
+.mixterra__slide img{
+  width: 25%;
+  top:14px;
+}
+.pillz__slide img{
+  width: 50%;
+  top: 0px
+}
+.femio__slide img{
+  width: 31%;
+}
+.certificate__partners{
+  margin-top: 100px;
+}
+
+  .cooperation__contentbox {
+    padding: 30px 6px;
+  }
+ 
+  .group__pillz-img{
+    margin-top: 40px;
+  }
+  .slides__count{
+    top: 84%;
+    right: 24%;
+    width: 70px;
+    height: 70px;
+  }
+  .slides_prev{
+    left: 24%;
+  }
+}
+@media (max-width: 420px) {
+  
+  .header__bg-absolute-1, .header__bg-absolute-2 {
+    display: none;
+  }
+  .certificate__slide-square{
+    max-width: 75%;
+    height: 150px;
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+  .cooperation__contentbox {
+    width: 100%;
+  }
+  .cooperation__contentbox-top {
+    flex-direction: column-reverse;
+  }
+  .cooperation__bg-absolute-1, .cooperation__bg-absolute-2 {
+    display: none;
+  }
+  .contacts__bg-absolute-1 {
+    display: none;
+  }
+
+  
+  .header__nav-mobile {
+    width: 350px;
+    position: absolute;
+    top: 30px;
+    right: 2px;
+    color: #979797;
+    background: #fff;
+    border-radius: 50px 0px 60px 50px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 0.1s linear;
+  }
+  .slides__count{
+    top: 87%;
+    right: 26%;
+    width: 60px;
+    height: 60px;
+  }
+  .slides_prev{
+    left: 26%;
+  }
+  .about__right-img{
+    width: 360px;
+  }
+  .brand__naturoteka-img{
+   width: 50%;
+    top: 60px;
+    left: -4px;
+  }
+  .brand__pillz-img{
+    width: 65%;
+    top: 60px;
+    left: -30px;
+  }
+  .brand__name{
+    font-size: 24px;
+  }
+  .brand__effilab-img{ 
+    width: 58%;
+    top: 88px;
+    left: -24px;
+  }
+  .brand__femio-img{ 
+    width: 85%;
+    top: -40px;
+    left: -56px;
+  }
+  .brand__mixtera-img{ 
+    width: 70%;
+    top: 0px;
+    left: -50px;
+  }
+  .brand__thincko-img{ 
+    width: 60%;
+    top: 40px;
+    left: -15px;
+  }
+}
+
+
+.brand__slide-arrow{
+  animation-name: loopi;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes loopi {
+  0%{
+    transform: translate(0);
+  }
+  50%{
+    transform: translate(50px);
+  }
+  100%{
+   
+      transform: translate(0);
+    
+  }
+  
+}
