@@ -57,7 +57,7 @@ body {
   font-size: 20px;
   line-height: 114%;
   color: #98B5FF;
-  
+  position: relative;
 }
 
 .title {
@@ -66,6 +66,7 @@ body {
   font-size: 38px;
   line-height: 114%;
   color: #4F587A;
+  position: relative;
 }
 
 .description {
@@ -162,6 +163,7 @@ body {
   padding: 20px 44px;
   border-radius: 15px 0px 15px 15px;
   display: inline-block;
+  position: relative;
 }
 .header__menu-mobile,
 .header__btn-mobile
@@ -418,7 +420,7 @@ body {
 }
 .certificate__bg-absolute-1 {
   position: absolute;
-  top:34px;
+  top:26px;
   left: 22vw;
   width: 56%;
 }
@@ -444,7 +446,7 @@ body {
   text-align: center;
 }
 .certificate__right {
-  /* width: 800px; */
+  
   position: relative;
 }
 .certificate__absolute-img1 {
@@ -490,11 +492,17 @@ body {
 .slides__count {
 position: absolute;
 top: 35%;
- cursor: pointer;
-  z-index: 10;
+cursor: pointer;
+z-index: 100;
+
+}
+.slides_prev{
+  left: -40px;
+  
 }
 .slides_next{
   right: -67px;
+  
 }
 
 
@@ -506,6 +514,7 @@ top: 35%;
 
 .group__swiper{
   width: 100%;
+  margin-top: 50px;
 }
 .group__slide{
   text-align: center;
@@ -514,7 +523,7 @@ top: 35%;
 }
 .group__img{
   width: 100%;
-  height: 88%;
+  height: 80%;
 }
 .group__pillz-img{
   width: 120%;
@@ -528,7 +537,7 @@ top: 35%;
 }
 .group__naturoteka-img{
   width: 77%;
-  
+  height: 80%;
 }
 .group__title{  
   font-family: 'Neue Machina';
@@ -1080,6 +1089,9 @@ padding: 10px 10px;
   .footer__nav-item {
     width: 160px;
   }
+  .slides_next{
+    right: -30px;
+  }
 }
 @media (max-width: 1140px) {
   .container {
@@ -1172,6 +1184,19 @@ padding: 10px 10px;
   }
   .footer__nav-list {
     margin-left: 200px;
+  }
+  .group__img{
+    width: 70%;
+   
+  }
+  .group__naturoteka-img{
+    width: 45%;
+  }
+  .slides_prev{
+    left: 0px;
+  }
+  .slides_next{
+    right: 0px;
   }
 }
 @media (max-width: 920px) {
@@ -1359,12 +1384,8 @@ padding: 10px 10px;
     width: 50%;
     text-align: center;
   }
-  .group__img{
-    width: 80%;
-    height: 88%;
-  }
-  .group__naturoteka-img{
-    width: 45%;
+  .infobox__shield{
+    bottom: 0;
   }
 }
 @media (max-width: 878px) {
@@ -1884,7 +1905,7 @@ padding: 10px 10px;
   }
   .group__img{
     width: 100%;
-    height: 80%;
+    height: 70%;
   }
   .group__naturoteka-img{
     width: 65%;
@@ -1896,6 +1917,12 @@ padding: 10px 10px;
   .header__bg-absolute-1, .header__bg-absolute-2 {
     display: none;
   }
+  .certificate{
+    margin: 100px 0 0 0;
+  }
+ .about{
+  margin-top: 0px;
+ }
   .certificate__slide-square{
     max-width: 75%;
     height: 150px;
@@ -1929,7 +1956,7 @@ padding: 10px 10px;
     transition: all 0.1s linear;
   }
   .slides__count{
-    top: 89%;
+    top: 74%;
     right: 0%;
     width: 60px;
     height: 60px;
@@ -1971,10 +1998,19 @@ padding: 10px 10px;
     top: 40px;
     left: -15px;
   }
+  .group__img{
+    width: 100%;
+    height: 65%;
+  }
   .group__pillz-img{
     width: 100%;
-    height: 74%;
+    height: 60%;
   }
+  .group__naturoteka-img{
+    width: 80%;
+    height: 65%;
+  }
+
 }
 
 
