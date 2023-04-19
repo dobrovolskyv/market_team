@@ -490,6 +490,8 @@ body {
 }
 
 .slides__count {
+  width: 60px;
+  height: 60px;
 position: absolute;
 top: 35%;
 cursor: pointer;
@@ -497,11 +499,11 @@ z-index: 100;
 
 }
 .slides_prev{
-  left: -40px;
+  left: 370px;
   
 }
 .slides_next{
-  right: -67px;
+  right: 370px;
   
 }
 
@@ -527,7 +529,7 @@ z-index: 100;
 }
 .group__pillz-img{
   width: 120%;
-
+margin-left: -30px;
 }
 .group__femio-img{
   width: 100%;
@@ -1197,6 +1199,9 @@ padding: 10px 10px;
   }
   .slides_next{
     right: 0px;
+  }
+  .group__pillz-img{
+    margin-left: 0;
   }
 }
 @media (max-width: 920px) {
